@@ -1,0 +1,40 @@
+.hero {
+  padding-bottom: 20px;
+}
+
+.hero__image {
+  grid-column: 6 span;
+}
+
+.hero__content {
+  padding-top: 145px;
+  grid-column: 6 span;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 110%;
+  color: var(--shark-color);
+}
+
+
+.hero__title span {
+  color: var(--green-color);
+}
+
+
+.hero__descr {
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--mantle-color);
+}
+
+
+.hero__link {
+  min-width: 225px;
+}

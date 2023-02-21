@@ -1,0 +1,101 @@
+.header {
+  padding: 31px 0;
+  background-color: var(--gin-color);
+}
+
+.header__container {
+  @include flex-b-center;
+}
+
+.header__right {
+  @include flex-v-center;
+}
+
+.header__nav {
+  margin-right: 60px;
+}
+
+.nav__list {
+  @include flex-v-center;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.nav__link {
+  position: relative;
+  z-index: 5;
+  outline: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--shark-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: -6px;
+  right: -6px;
+  top: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background-color: var(--killarney-color);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nav__link:focus::after {
+  opacity: 1;
+}
+
+.nav__link:hover {
+  color: var(--green-color);
+}
+
+.nav__link:active {
+  color: var(--killarney-color);
+}
+
+.cart {
+  position: relative;
+  outline: none;
+}
+
+.cart svg {
+  position: relative;
+  z-index: 5;
+  stroke: var(--shark-color);
+  transition: stroke 0.3s ease-in-out;
+}
+
+
+.cart::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  bottom: -1px;
+  background-color: var(--mantle-color);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cart:focus svg {
+  stroke: var(--green-color);
+}
+
+.cart:focus::after {
+  opacity: 1;
+}
+
+.cart:hover svg {
+  stroke: var(--green-color);
+}
+
+.cart:active svg {
+  stroke: var(--killarney-color);
+}

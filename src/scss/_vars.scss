@@ -1,0 +1,20 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Raleway", sans-serif;
+  --content-width: 1140px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --gin-color: #e1ede6;
+  --black-color: #000;
+  --shark-color: #2c2d35;
+  --killarney-color: #376b44;
+  --green-color: #598d66;
+  --mantle-color: #86928b;
+  --surf-color: #d4e8d9;
+  --gap: 30px;
+}
